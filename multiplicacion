@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Calculadora {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner entrada=new Scanner(System.in);
+		int a=2;
+		int b=3;
+		int c=0;
+		int mult=0;
+		for(int i=0;i<b;i++){
+			mult=a+c;
+			c=mult;
+		}
+		System.out.println(c);
+		entrada.close();	
+	}
+
+}
