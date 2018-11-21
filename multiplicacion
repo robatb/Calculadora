@@ -4,10 +4,14 @@ public class Calculadora {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner entrada=new Scanner(System.in);
-		int a=2;
-		int b=3;
-		int c=0;
-		int mult=0;
+		double a=0;
+		double b=0;
+		double c=0;
+		double mult=0;
+		System.out.println("ingrese primer numero a multiplicar");
+		a=entrada.nextDouble();
+		System.out.println("ingrese segundo numero a multiplicar");
+		b=entrada.nextDouble();
 		for(int i=0;i<b;i++){
 			mult=a+c;
 			c=mult;
