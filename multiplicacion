@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Calculadora {
+public class multiplicacion {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,12 +12,25 @@ public class Calculadora {
 		a=entrada.nextDouble();
 		System.out.println("ingrese segundo numero a multiplicar");
 		b=entrada.nextDouble();
-		for(int i=0;i<b;i++){
-			mult=a+c;
-			c=mult;
+		if(a>b){
+			c=a;
+			a=b;
+			b=c;
+			c=0;
+			for(double i=0;i<b;i++){
+				mult=a+c;
+				c=mult;
+			}
+		}
+		else{
+			for(double i=0;i<b;i++){
+				mult=a+c;
+				c=mult;
+			}
+		
 		}
 		System.out.println(c);
-		entrada.close();	
+		entrada.close();
 	}
 
 }
