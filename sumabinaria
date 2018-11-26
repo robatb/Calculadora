@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class sumabinaria {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner entrada=new Scanner(System.in);
+		String a;
+		String b;
+		System.out.println("ingrese 1er numero:");
+		a=entrada.nextLine();
+		System.out.println("ingrese 2do numero:");
+		b=entrada.nextLine();
+		String resultado;
+		resultado=Suma(a,b);
+		System.out.println(resultado);
+		entrada.close();
+	
+	}
+
+
+	public static String Suma(String a, String b) {
+		int a1 = Integer.parseInt(a, 2);
+		int b1 = Integer.parseInt(b, 2);
+		int c1 = a1 + b1;
+		String resultado = Integer.toString(c1, 2);
+		return resultado;
+	}
+}
