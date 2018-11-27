@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class sumabinaria {
 
@@ -6,13 +7,18 @@ public class sumabinaria {
 		Scanner entrada=new Scanner(System.in);
 		String a;
 		String b;
+		int c;
 		System.out.println("ingrese 1er numero:");
 		a=entrada.nextLine();
 		System.out.println("ingrese 2do numero:");
 		b=entrada.nextLine();
 		String resultado;
 		resultado=Suma(a,b);
-		System.out.println(resultado);
+		System.out.println("La suma binaria es: "+resultado);
+		int a1 = Integer.parseInt(a);
+		int b1 = Integer.parseInt(b);
+		c=a1+b1;
+		System.out.println("La suma numerica es: "+c);
 		entrada.close();
 	
 	}
