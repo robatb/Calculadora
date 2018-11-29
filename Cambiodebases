@@ -7,13 +7,13 @@ public class cambiodebases {
 		String a;
 		int n;
 		int m;
-		System.out.println("ingrese base n del numero");
-		n=entrada.nextInt();
-		System.out.println("ingrese base m para transformar");
-		m=entrada.nextInt();
+		String resultado;
 		System.out.println("ingrese numero:");
 		a=entrada.nextLine();
-		String resultado;
+		System.out.println("ingrese base m a transformar:");
+		m=entrada.nextInt();
+		System.out.println("ingrese base n del numero:");
+		n=entrada.nextInt();
 		resultado=Conv(a,n,m);
 		System.out.println("El cambio de base "+n+" a base "+m+" es: "+resultado);
 		entrada.close();
